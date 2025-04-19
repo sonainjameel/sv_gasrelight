@@ -23,11 +23,11 @@ cp colmap2nerf.py ~/colmap/scripts/python/
 ## Running COLMAP Reconstruction
 Use the following commands to run the automatic reconstruction pipeline in COLMAP:
 ```sh
-colmap automatic_reconstructor --workspace_path /home/user/TriplaneGaussian/outputs/video --image_path /home/user/TriplaneGaussian/outputs/video/0000_rgba
+colmap automatic_reconstructor --workspace_path /home/user/PSHuman/outputs/video --image_path /home/user/PSHuman/outputs/video/0000_rgba
 ```
 Convert the model to a text format:
 ```sh
-colmap model_converter --input_path /home/user/TriplaneGaussian/outputs/video/sparse/0 --output_path /home/user/TriplaneGaussian/outputs/video/sparse/0 --output_type TXT
+colmap model_converter --input_path /home/user/PSHuman/outputs/video/sparse/0 --output_path /home/user/PSHuman/outputs/video/sparse/0 --output_type TXT
 ```
 
 
@@ -43,7 +43,7 @@ This modified version of `colmap2nerf.py` introduces the following changes:
 
 ## Running the Modified `colmap2nerf.py`
 ```sh
-python ~/colmap/scripts/python/colmap2nerf2.py --text /home/user/TriplaneGaussian/outputs/video/sparse/0 --images /home/user/TriplaneGaussian/outputs/video/sparse/images --out /home/user/TriplaneGaussian/outputs/video/transforms3.json --aabb_scale 16
+python ~/colmap/scripts/python/colmap2nerf2.py --text /home/user/PSHuman/outputs/video/sparse/0 --images /home/user/PSHuman/outputs/video/sparse/images --out /home/user/PSHuman/outputs/video/transforms3.json --aabb_scale 16
 ```
 
 ## License

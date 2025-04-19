@@ -6,7 +6,7 @@ This repository provides a pipeline for 3D human reconstruction and relighting u
 
 Follow the installation guides for each module:
 
-- **[PSHuman Gaussian Installation](PSHuman/Readme.md)**: For single-view 3D reconstruction using PSHuman.
+- **[PSHuman Gaussian Installation](PSHuman/README.md)**: For single-view 3D reconstruction using PSHuman.
 - **[Colmap to NeRF Transformation](TransformationFile/README.md)**: For generating transform.jason file from the novel multiviews using PSHuman.
 - **[Relightable 3D Gaussian Installation](Relightable3DGaussian/README.md)**: For real-time relighting using BRDF decomposition and ray tracing.
 
